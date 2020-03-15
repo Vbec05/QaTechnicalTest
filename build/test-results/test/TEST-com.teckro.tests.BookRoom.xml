@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.teckro.tests.BookRoom" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-03-15T20:09:30" hostname="vbecirov-m5530" time="2.123">
+  <properties/>
+  <testcase name="bookRoomInvalidDate" classname="com.teckro.tests.BookRoom" time="1.686"/>
+  <testcase name="bookRoomOneDay" classname="com.teckro.tests.BookRoom" time="0.393"/>
+  <testcase name="bookRoomTwoDays" classname="com.teckro.tests.BookRoom" time="0.043"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
