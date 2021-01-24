@@ -1,43 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="9" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="2597" started-at="2020-03-15T20:09:30Z" finished-at="2020-03-15T20:09:32Z">
+  <suite name="Suite1" duration-ms="973" started-at="2021-01-24T01:24:23Z" finished-at="2021-01-24T01:24:24Z">
     <groups>
     </groups>
-    <test name="BookingRoom" duration-ms="2597" started-at="2020-03-15T20:09:30Z" finished-at="2020-03-15T20:09:32Z">
-      <class name="com.teckro.tests.CheckAvailability">
-        <test-method status="PASS" signature="checkAvailabilityInValidDateFormatTwo()[pri:0, instance:com.teckro.tests.CheckAvailability@31075276]" name="checkAvailabilityInValidDateFormatTwo" duration-ms="30" started-at="2020-03-15T20:09:32Z" finished-at="2020-03-15T20:09:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkAvailabilityInValidDateFormatTwo -->
-        <test-method status="PASS" signature="checkAvailabilitySendStringInsteadOfDate()[pri:0, instance:com.teckro.tests.CheckAvailability@31075276]" name="checkAvailabilitySendStringInsteadOfDate" duration-ms="21" started-at="2020-03-15T20:09:32Z" finished-at="2020-03-15T20:09:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkAvailabilitySendStringInsteadOfDate -->
-        <test-method status="PASS" signature="checkAvailabilityValidDate()[pri:0, instance:com.teckro.tests.CheckAvailability@31075276]" name="checkAvailabilityValidDate" duration-ms="26" started-at="2020-03-15T20:09:32Z" finished-at="2020-03-15T20:09:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkAvailabilityValidDate -->
-      </class> <!-- com.teckro.tests.CheckAvailability -->
-      <class name="com.teckro.tests.BookRoom">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.teckro.tests.BookRoom@17b5e778]" name="setup" is-config="true" duration-ms="376" started-at="2020-03-15T20:09:30Z" finished-at="2020-03-15T20:09:30Z">
+    <test name="DbArrivals" duration-ms="973" started-at="2021-01-24T01:24:23Z" finished-at="2021-01-24T01:24:24Z">
+      <class name="com.leaseplan.tests.Arrivals">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.leaseplan.tests.Arrivals@31d92942]" name="setup" is-config="true" duration-ms="969" started-at="2021-01-24T01:24:23Z" finished-at="2021-01-24T01:24:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="bookRoomInvalidDate()[pri:0, instance:com.teckro.tests.BookRoom@17b5e778]" name="bookRoomInvalidDate" duration-ms="1686" started-at="2020-03-15T20:09:30Z" finished-at="2020-03-15T20:09:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookRoomInvalidDate -->
-        <test-method status="PASS" signature="bookRoomOneDay()[pri:0, instance:com.teckro.tests.BookRoom@17b5e778]" name="bookRoomOneDay" duration-ms="393" started-at="2020-03-15T20:09:32Z" finished-at="2020-03-15T20:09:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookRoomOneDay -->
-        <test-method status="PASS" signature="bookRoomTwoDays()[pri:0, instance:com.teckro.tests.BookRoom@17b5e778]" name="bookRoomTwoDays" duration-ms="43" started-at="2020-03-15T20:09:32Z" finished-at="2020-03-15T20:09:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookRoomTwoDays -->
-      </class> <!-- com.teckro.tests.BookRoom -->
-    </test> <!-- BookingRoom -->
+      </class> <!-- com.leaseplan.tests.Arrivals -->
+    </test> <!-- DbArrivals -->
   </suite> <!-- Suite1 -->
 </testng-results>

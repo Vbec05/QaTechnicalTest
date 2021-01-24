@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.teckro.tests.CheckAvailability" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-03-15T20:09:32" hostname="vbecirov-m5530" time="0.078">
-  <properties/>
-  <testcase name="checkAvailabilityInValidDateFormatTwo" classname="com.teckro.tests.CheckAvailability" time="0.03"/>
-  <testcase name="checkAvailabilitySendStringInsteadOfDate" classname="com.teckro.tests.CheckAvailability" time="0.021"/>
-  <testcase name="checkAvailabilityValidDate" classname="com.teckro.tests.CheckAvailability" time="0.026"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
