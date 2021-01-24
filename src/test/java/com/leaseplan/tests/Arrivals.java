@@ -11,6 +11,7 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import net.serenitybdd.junit.runners.SerenityRunner;
+import net.thucydides.core.annotations.Step;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.testng.Assert;
@@ -25,6 +26,7 @@ public class Arrivals extends BeforeAfterTest {
     private RequestSpecification request;
 
     @org.junit.Test
+    @Step
     @Given("I want to find arrivals in Berlin")
     public void allArrivalsBerlin() {
 
@@ -33,7 +35,7 @@ public class Arrivals extends BeforeAfterTest {
 
 
     }
-
+    @Step
     @When("When the date is valid")
     public void sendValidDate() {
 
@@ -42,14 +44,14 @@ public class Arrivals extends BeforeAfterTest {
 
 
     }
-
+    @Step
     @Then("The status code should be 200")
     public void getStatusCode() {
         json = response.then().statusCode(200);
 
 
     }
-
+    @Step
     @And("Response Contains")
     public void responseContains() {
 
@@ -65,13 +67,14 @@ public class Arrivals extends BeforeAfterTest {
 
 
     @Test
+    @Step
     @Given("I want to find arrivals in Berlin")
     public void allArrivalsBerlinInvalidDate() {
 
         request = given()
                 .queryParam("date", DataProperties.getInValidDate());
     }
-
+    @Step
     @When("When the date is invalid")
     public void sendInValidDate() {
 
@@ -79,7 +82,7 @@ public class Arrivals extends BeforeAfterTest {
                 .get(getBaseUrl() + getArrivalsUrl());
 
     }
-
+    @Step
     @Then("The status code should be 400")
     public void getErrorStatusCode() {
         json = response.then().statusCode(400);
