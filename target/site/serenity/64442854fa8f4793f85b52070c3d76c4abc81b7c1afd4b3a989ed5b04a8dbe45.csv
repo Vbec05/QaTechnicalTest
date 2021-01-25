@@ -1,3 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Arrivals","All arrivals berlin","SUCCESS","2021-01-24T12:48:30.648Z[Europe/London]","0.0","0.74"
-"Arrivals","All arrivals berlin invalid date","SUCCESS","2021-01-24T12:48:31.445Z[Europe/London]","0.0","0.0"
+"Arrivals","All arrivals berlin","SUCCESS","2021-01-25T21:21:17.551Z[Europe/London]","0.0","0.82"
+"Arrivals","All arrivals berlin invalid date","SUCCESS","2021-01-25T21:21:18.424Z[Europe/London]","0.0","0.0"
