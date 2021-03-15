@@ -41,7 +41,7 @@ apply plugin: 'java'
     }
 
         test {
-            useJUnit()
+            useTestNG()
 
             maxHeapSize = '1G'
         }

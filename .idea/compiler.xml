@@ -5,8 +5,12 @@
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="LeasePlanTest.main" target="1.8" />
+      <module name="LeasePlanTest.test" target="1.8" />
       <module name="TeckroTest.main" target="1.8" />
       <module name="TeckroTest.test" target="1.8" />
+      <module name="Test.main" target="1.8" />
+      <module name="Test.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -20,11 +20,6 @@ public class EnvironmentProperties {
 
     }
 
-    public static String getArrivalsUrl() {
-        return getParam("arrivalBoard");
-
-    }
-
 
     /**
      * Gets the param from the properties file
