@@ -18,7 +18,7 @@ import static org.testng.Assert.assertEquals;
 
 public class News extends BeforeAfterTest {
 
-
+// Just a simple Get Request to validate 200 response
     @Test
     public void getNews() {
 
@@ -32,6 +32,7 @@ public class News extends BeforeAfterTest {
 
     }
 
+    // A request to get fresh stories which have been published in the last 12 hours
     @Test
     public void getFreshStories() {
 
@@ -48,7 +49,7 @@ public class News extends BeforeAfterTest {
     }
 
 
-
+// Request to Verify that there is a set Rate Limit of 60 and the time period.
     @Test
     public void getRateLimit() {
 
@@ -63,6 +64,7 @@ public class News extends BeforeAfterTest {
 
     }
 
+    // A request to do a Keyword search and validate the Keyword is contained in the response.
     @Test
     public void getKeyWords() {
 
@@ -82,29 +84,4 @@ public class News extends BeforeAfterTest {
 
     }
 
-    @Test
-    public void getStoriesVolume() {
-
-        Response response=  given()
-                .header(DataProperties.getApplicationIdHeader(), DataProperties.getApplicationID())
-                .header(DataProperties.getApplicationKeyHeader(), DataProperties.getApplicationKey())
-                .queryParam("published_at.start", "NOW-1DAY")
-                .queryParam("published_at.end", "NOW")
-                .when()
-                .get(getBaseUrl())
-                .then().statusCode(400).extract().response();
-
-
-
-        Response response1= given()
-                .header(DataProperties.getApplicationIdHeader(), DataProperties.getApplicationID())
-                .header(DataProperties.getApplicationKeyHeader(), DataProperties.getApplicationKey())
-                .queryParam("published_at.start", "NOW-3DAY")
-                .queryParam("published_at.end", "NOW-1DAY")
-                .when()
-                .get(getBaseUrl())
-                .then().statusCode(200).extract().response();
-
-
-    }
 }
