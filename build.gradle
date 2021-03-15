@@ -3,10 +3,7 @@ buildscript {
         mavenLocal()
         jcenter()
     }
-    dependencies {
-        classpath "net.serenity-bdd:serenity-gradle-plugin:1.9.36"
-        classpath "net.serenity-bdd:serenity-emailer:1.9.36"
-    }
+
 }
 
 
@@ -15,7 +12,7 @@ buildscript {
         id 'java'
     }
 apply plugin: 'java'
-apply plugin: 'net.serenity-bdd.aggregator'
+
 
 
     group 'org.example'
@@ -34,73 +31,25 @@ apply plugin: 'net.serenity-bdd.aggregator'
         testImplementation "io.rest-assured:rest-assured:3.3.0"
         testImplementation "org.testng:testng:6.14.3"
         implementation group: 'com.google.code.gson', name: 'gson', version: '2.7'
-        implementation 'net.serenity-bdd:serenity-gradle-plugin:2.3.10'
         implementation 'org.testng:testng:6.9.6'
-        testCompile "io.cucumber:cucumber-java:6.2.2"
-        testCompile "io.cucumber:cucumber-junit:6.2.2"
         testCompile "io.rest-assured:rest-assured:3.3.0"
         testCompile "com.jayway.jsonpath:json-path:2.4.0"
-        testCompile "net.serenity-bdd:serenity-core:2.3.10"
-        testCompile "net.serenity-bdd:serenity-cucumber6:2.3.10"
-        testCompile "net.serenity-bdd:serenity-screenplay:2.3.10"
-        testCompile "net.serenity-bdd:serenity-screenplay-webdriver:2.3.10"
-        testCompile "net.serenity-bdd:serenity-ensure:2.3.10"
         testCompile "org.assertj:assertj-core:3.8.0"
         compile 'org.apache.logging.log4j:log4j-slf4j-impl:2.14.0'
 
 
     }
-    tasks.withType(Test) {
 
-        useTestNG {
-            useDefaultListeners = true
-        }
-
-        options {
-            listeners << 'org.uncommons.reportng.JUnitXMLReporter'
-        }
-
-        testLogging.showStandardStreams = true
-
-        systemProperties System.getProperties()
-        systemProperty "org.uncommons.reportng.escape-output", "false"
-        systemProperty "org.uncommons.reportng.title", "Test Report"
-
-        ignoreFailures = false
-    }
-
-    test {
-        systemProperties += project.properties.subMap(["base.url"])
-
-        useTestNG() { //Tells Gradle to use TestNG
-            useDefaultListeners = true // Tells TestNG to execute its default reporting structure
-            suites 'src/test/resources/Suites.xml' //location of our suite.xml
-        }
         test {
             useJUnit()
 
             maxHeapSize = '1G'
         }
 
-    }
-    configurations {
-        cucumberRuntime {
-            extendsFrom testImplementation
-        }
-    }
-    task cucumber() {
-        dependsOn assemble, compileTestJava
-        doLast {
-            mkdir 'build/test-results/'
-            javaexec {
-                main = "io.cucumber.core.cli.Main"
-                classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
-                args = ['--plugin', 'pretty', '--plugin', 'html:build/test-results/functional.html', '--plugin', 'junit:build/test-results/functional.xml', '--tags', '@functional', '--glue', 'scenarios', 'src/test/resources']
-            }
-            gradle.startParameter.continueOnFailure = true
 
-        }
 
-    }
+
+
+
 
 
