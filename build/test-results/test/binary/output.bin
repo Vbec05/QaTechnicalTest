@@ -1,0 +1,105 @@
+Request method:	GET
+>Request URI:	https://api.aylien.com/news/stories?body=Zurich
+Proxy:			<none>
+Request params:	<none>
+Query params:	body=Zurich
+Form params:	<none>
+Path params:	<none>
+%Headers:		X-Application-Id=4d87da14
+8				X-Application-Key=3228f70d9967dbee6d2b63b5c7752f46
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 401 Unauthorized
++x-powered-by: Gateway/v0.0.7-148-ga76f7e9
+x-ratelimit-hit-limit: 60
+ x-ratelimit-hit-period: minute
+x-ratelimit-hit-remaining: 59
+2x-ratelimit-hit-reset: 2021-04-13 12:26:00 +0000
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 59
+.x-ratelimit-reset: 2021-04-13 12:26:00 +0000
+"x-ratelimit-volume-limit: 100000
+"x-ratelimit-volume-period: month
+%x-ratelimit-volume-remaining: 99990
+5x-ratelimit-volume-reset: 2021-05-01 00:00:00 +0000
+4x-request-id: af6db002-25ba-440a-ab8b-761c122a3e93
+%date: Tue, 13 Apr 2021 12:25:16 GMT
+content-length: 198
+)content-type: text/plain; charset=utf-8
+#x-envoy-upstream-service-time: 93
+server: istio-envoy
+
+È{"errors":[{"code":"KB401","detail":"application is not active","id":"error401_unauthorized","links":{"about":"https://docs.aylien.com/newsapi/#authorization"},"status":401,"title":"Unauthorized"}]}
+Request method:	GET
+2Request URI:	https://api.aylien.com/news/stories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+%Headers:		X-Application-Id=4d87da14
+8				X-Application-Key=3228f70d9967dbee6d2b63b5c7752f46
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 401 Unauthorized
++x-powered-by: Gateway/v0.0.7-148-ga76f7e9
+x-ratelimit-hit-limit: 60
+ x-ratelimit-hit-period: minute
+x-ratelimit-hit-remaining: 59
+2x-ratelimit-hit-reset: 2021-04-13 12:26:00 +0000
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 59
+.x-ratelimit-reset: 2021-04-13 12:26:00 +0000
+"x-ratelimit-volume-limit: 100000
+"x-ratelimit-volume-period: month
+%x-ratelimit-volume-remaining: 99990
+5x-ratelimit-volume-reset: 2021-05-01 00:00:00 +0000
+4x-request-id: 6f9b0e6d-32c1-4a06-9c8d-117d55cee11d
+%date: Tue, 13 Apr 2021 12:25:17 GMT
+content-length: 198
+)content-type: text/plain; charset=utf-8
+#x-envoy-upstream-service-time: 63
+server: istio-envoy
+
+È{"errors":[{"code":"KB401","detail":"application is not active","id":"error401_unauthorized","links":{"about":"https://docs.aylien.com/newsapi/#authorization"},"status":401,"title":"Unauthorized"}]}
+Request method:	GET
+2Request URI:	https://api.aylien.com/news/stories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+%Headers:		X-Application-Id=4d87da14
+8				X-Application-Key=3228f70d9967dbee6d2b63b5c7752f46
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 401 Unauthorized
++x-powered-by: Gateway/v0.0.7-148-ga76f7e9
+x-ratelimit-hit-limit: 60
+ x-ratelimit-hit-period: minute
+x-ratelimit-hit-remaining: 59
+2x-ratelimit-hit-reset: 2021-04-13 12:26:00 +0000
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 59
+.x-ratelimit-reset: 2021-04-13 12:26:00 +0000
+"x-ratelimit-volume-limit: 100000
+"x-ratelimit-volume-period: month
+%x-ratelimit-volume-remaining: 99990
+5x-ratelimit-volume-reset: 2021-05-01 00:00:00 +0000
+4x-request-id: ba45f2ce-68a6-4287-b290-ec9cf4dc05e2
+%date: Tue, 13 Apr 2021 12:25:17 GMT
+content-length: 198
+)content-type: text/plain; charset=utf-8
+#x-envoy-upstream-service-time: 60
+server: istio-envoy
+
+È{"errors":[{"code":"KB401","detail":"application is not active","id":"error401_unauthorized","links":{"about":"https://docs.aylien.com/newsapi/#authorization"},"status":401,"title":"Unauthorized"}]}
